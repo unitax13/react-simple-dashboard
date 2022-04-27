@@ -1,0 +1,576 @@
+:root {
+  --turkus: #44b9b2;
+  --prawie_bialy: #f1f1f1;
+  --dd: #dddddd;
+  --cc: #cccccc;
+  --niebieski: #318cf6;
+  --warning_medium: #d2b139;
+  --warning_strong: #ad3232;
+  --gray: gray;
+
+  --is_dark_mode_on: 0;
+  --hue_rotate: 0deg;
+
+  filter: invert(var(--is_dark_mode_on)) hue-rotate(var(--hue_rotate));
+}
+
+.invert {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.lightModeDarkModeSection {
+  display: flex;
+  align-items: center;
+}
+
+.languageSelect {
+  /* margin-left: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Rubik;
+  font-size: 10px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.blackIcon {
+  color: #000;
+  margin: auto 0 auto 0;
+  background-color: var(--cc);
+  border-radius: 5px;
+  margin-right: 17px;
+}
+
+.nocolorIcon {
+  margin: auto 0 auto 0;
+}
+
+.App {
+  font-family: Rubik;
+  text-align: center;
+  margin: auto;
+}
+
+.mainBox {
+  background-color: var(--dd);
+  width: 1440px;
+  height: 1100px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.mainBoxInside {
+  width: 1440px;
+  height: 1030px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* background-color: chartreuse; */
+}
+
+.mainBoxRow1 {
+  width: 1440px;
+  height: 52%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: chartreuse; */
+}
+
+.mainFrameToolbar {
+  width: 100%;
+  height: 70px;
+  background-color: var(--turkus);
+  display: flex;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.mainFrameToolbar .languageSection {
+  display: flex;
+  align-items: center;
+}
+
+.mainFrameToolbarChildElement {
+  margin: auto 0 auto 0;
+}
+
+.mainSellingStatsAndChartsFrame {
+  background-color: var(--cc);
+  position: relative;
+  /* width: 480px; */
+  width: 32%;
+  height: 450px;
+  border: 1px solid black;
+}
+
+.mainSellingStatsAndChartsTopBar {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /* padding-left: 20px; */
+  /* flex-direction: column; */
+  width: 100%;
+  height: 60px;
+  background-color: var(--niebieski);
+  gap: 12px;
+}
+
+.topOffersFrame .mainSellingStatsAndChartsTopBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: var(--niebieski);
+  gap: 12px;
+}
+
+.topOffersFrame .mainSellingStatsAndChartsTopBarTitle {
+  width: 50%;
+  display: flex;
+  gap: 12px;
+  justify-content: ;
+  font-family: "Rubik";
+  font-size: 24px;
+  align-items: center;
+  margin: auto 0 auto 0;
+  text-align: left;
+  color: white;
+  align-content: center;
+}
+
+.mainSellingStatsAndChartsTopBar .whiteIcon {
+  color: var(--prawie_bialy);
+  margin: auto 0 auto 0;
+  padding-left: 12px;
+}
+
+.sortByBar {
+  color: white;
+  margin: auto 5px auto 0;
+  font-size: 12px;
+}
+
+.sortBySelect {
+  font-family: Rubik;
+  font-size: 20px;
+  width: 11.2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.mainSellingStatsAndChartsTopBarTitle {
+  font-family: "Rubik";
+  font-size: 24px;
+  /* line-height: 60px; */
+  margin: auto 0 auto 0;
+  text-align: left;
+  /* padding-left: 66px; */
+  color: white;
+  align-content: center;
+  /* white-space: nowrap; */
+}
+
+.mainSellingQualityFrame {
+  background-color: var(--prawie_bialy);
+  position: relative;
+  /* width: 440px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+  height: 450px;
+  border: 1px solid black;
+}
+
+.sellingQualityTextCol1 {
+  width: 100%;
+  height: 30%;
+  /* text-align: center; */
+  /* display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; */
+}
+.sellingQualityTextCol1 .qualityElementLine {
+  margin: 0 1rem 0 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sellingQualityTextCol1 .qualityElementLine .qualityNumber {
+  font-size: 1.5rem;
+  font-style: bold;
+}
+.sellingQualityTextCol2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.sellingQualityTextCol2 .qualityElementLine {
+  margin: 0 1rem 0 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ordersContainer {
+  left: -1px;
+  position: relative;
+  width: 100%;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ordersSection {
+  position: relative;
+  width: 100%;
+  height: 33.3%;
+  border: 1px solid black;
+  background-color: var(--prawie_bialy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ordersSection .ordersSectionText {
+  text-align: left;
+  height: 100%;
+  width: 30%;
+  line-height: 59px;
+  margin-left: 10px;
+  position: relative;
+  height: 100%;
+  /* padding: 1rem; */
+}
+
+.ordersSection .iconAndNumber {
+  width: 30%;
+  font-size: 36px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.ordersSection .gotoButton {
+  width: 30%;
+  margin-right: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Rubik;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 20px;
+}
+
+.mainOrdersAndAdvicesForSellersCombinedFrame {
+  position: relative;
+  width: 32%;
+}
+
+.mainOrdersFrame {
+  background-color: var(--prawie_bialy);
+  position: relative;
+  margin-left: -1px;
+  width: 100%;
+  height: 245px;
+  border: 1px solid black;
+}
+
+.mainAdvicesForSellersFrame {
+  background-color: var(--prawie_bialy);
+  position: relative;
+  margin-left: -1px;
+  width: 100%;
+  height: 202px;
+  border: 1px solid black;
+}
+
+.advicesForSellersText {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.mainBoxRow2 {
+  width: 1440px;
+  height: 60%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: chartreuse; */
+}
+
+.topOffersFrame {
+  border: 1px solid black;
+  width: 66.1%;
+  height: 100%;
+}
+
+.topOffersFrame .offersContainer {
+  position: relative;
+  display: flex;
+  height: 88.8%;
+  flex-direction: column;
+}
+
+.topOffersFrame .offersContainer .offersSection {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  height: 20%;
+  background-color: var(--prawie_bialy);
+  border: 1px solid black;
+}
+
+.topOffersFrame .offersContainer .offersSection .col1 {
+  width: 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topOffersFrame .offersContainer .offersSection .col1 .miniature {
+  /* margin: auto; */
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 {
+  margin-right: 8px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  font-size: 20px;
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 .row2 .altText {
+  color: var(--gray);
+  font-size: small;
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 .row2 .sold {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 .row2 .priceModule {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 .row2 .income {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topOffersFrame
+  .offersContainer
+  .offersSection
+  .col2
+  .row2
+  .priceModule
+  .price {
+  padding: 0.2em;
+}
+.topOffersFrame
+  .offersContainer
+  .offersSection
+  .col2
+  .row2
+  .income
+  .incomeIcon {
+  padding: 0.2em;
+}
+
+.topOffersFrame .offersContainer .offersSection .col2 .row2 .uniqueViews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recentReviewsFrame {
+  position: relative;
+  margin-right: -1px;
+  width: 32%;
+  border: 1px solid black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recentReviewsFrame .mainSellingStatsAndChartsTopBar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: var(--niebieski);
+  gap: 12px;
+}
+
+.recentReviewsFrame .mainSellingStatsAndChartsTopBarTitle {
+  width: 51%;
+  display: flex;
+  gap: 12px;
+  justify-content: ;
+  font-family: "Rubik";
+  font-size: 24px;
+  align-items: center;
+  margin: auto 0 auto 0;
+  text-align: left;
+  color: white;
+  align-content: center;
+}
+
+.recentReviewsFrame .showingSelectBar {
+  color: white;
+  margin: auto 5px auto 0;
+  font-size: 12px;
+}
+
+.recentReviewsFrame .showingSelect {
+  font-family: Rubik;
+  font-size: 10px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 20px;
+  width: 7.5em;
+}
+
+.recentReviewsFrame .reviewsContainer1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 78.2%;
+}
+
+.recentReviewsFrame .reviewsContainer1 .commentSection {
+  border: 1px solid black;
+  margin-left: -1px;
+  background-color: var(--prawie_bialy);
+  width: 100%;
+  flex: 0 0 19.5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.recentReviewsFrame .reviewsContainer1 .commentSection .userIcon {
+  min-width: 75px;
+  /* margin-left:5px; */
+}
+
+.recentReviewsFrame .reviewsContainer1 .commentSection .column1 {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+}
+
+.recentReviewsFrame .reviewsContainer1 .commentSection .column2 {
+  width: 76%;
+}
+
+.recentReviewsFrame .reviewsContainer1 .commentSection .row1 {
+  font-size: smaller;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.recentReviewsFrame .reviewsContainer1 .commentSection .row1 .text {
+  color: var(--gray);
+}
+
+.recentReviewsFrame .reviewsContainer1 .commentSection .row2 {
+  position: relative;
+  text-align: left;
+  margin-top: 5px;
+  /* height: 1%; */
+}
+
+.bottomBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding-left: 20px; */
+  /* flex-direction: column; */
+  width: 100%;
+  height: 60px;
+  background-color: var(--niebieski);
+  /* gap: 15px; */
+}
+
+.recentReviewsFrame .bottomBar .seeMoreButtonSection {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recentReviewsFrame .bottomBar .seeMoreButtonSection .seeMoreButtonLine {
+  font-family: Rubik;
+  font-size: 20px;
+  text-align: center;
+  /* background-color: rgb(230, 218, 170); */
+}
+
+.buttonInside {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: Rubik;
+  font-size: 10px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 20px;
+  margin: auto;
+}
+
+.seeMoreFrame {
+  position: relative;
+  margin-right: -1px;
+  width: 100%;
+  border: 1px solid black;
+  height: 93.6%;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+.seeMoreFrame .seeMoreContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 78.2%;
+}
